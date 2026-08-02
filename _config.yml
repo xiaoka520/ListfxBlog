@@ -96,11 +96,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/<你的用户名>/<你的仓库名>.git
+  repo: https://github.com/xiaoka520/ListfxBlog.git
   branch: gh-pages
