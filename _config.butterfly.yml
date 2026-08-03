@@ -18,10 +18,11 @@ nav:
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  首页: / || fas fa-home
+  时光轴: /时光轴/ || fas fa-clock
+  友人帐: /友人帐/ || fas fa-user-friends
+  说说: /说说/ || fas fa-comment-dots
+  帮助: /help/ || fas fa-circle-question
 
 # --------------------------------------
 # Code Blocks Settings
