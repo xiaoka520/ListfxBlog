@@ -144,7 +144,7 @@ iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='vimeo.com'] { 
 
 #page-header.full_page #site-title {
   font-family: 'DynaPuff', system-ui, sans-serif;
-  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
   font-weight: 600;
   letter-spacing: .02em;
 }
