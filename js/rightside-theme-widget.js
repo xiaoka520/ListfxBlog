@@ -16,7 +16,7 @@
     const toggle = document.createElement('theme-button')
     const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
     toggle.setAttribute('value', currentTheme)
-    toggle.setAttribute('size', '2.6')
+    toggle.setAttribute('size', '1.8')
     toggle.setAttribute('role', 'switch')
     toggle.setAttribute('aria-label', '切换深色模式')
     toggle.setAttribute('aria-checked', String(currentTheme === 'dark'))
