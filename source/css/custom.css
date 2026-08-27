@@ -201,12 +201,12 @@ iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='vimeo.com'] { 
 
 #rightside .theme-toggle-widget {
   position: absolute;
-  top: -34px;
+  top: 0;
   right: 45px;
   box-sizing: border-box;
-  width: 220px;
-  min-height: 112px;
-  padding: 14px 16px 16px;
+  width: 145px;
+  height: 75px;
+  padding: 6px 8px;
   overflow: hidden;
   border: 1px solid var(--listfx-border);
   border-radius: 14px;
@@ -228,33 +228,31 @@ iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='vimeo.com'] { 
 }
 
 .theme-toggle-widget__title {
-  margin-bottom: 8px;
+  margin-bottom: 3px;
   color: var(--font-color);
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1.4;
 }
 
 .theme-toggle-widget__control {
   position: relative;
-  width: 180px;
-  height: 62px;
+  width: 112px;
+  height: 42px;
   margin: 0 auto;
 }
 
 .theme-toggle-widget__control theme-button {
   position: relative;
   display: block;
-  width: 180px;
-  height: 62px;
+  width: 112px;
+  height: 42px;
 }
 
 @media screen and (max-width: 480px) {
   #rightside .theme-toggle-widget {
     right: 43px;
-    width: 202px;
-    padding-right: 8px;
-    padding-left: 8px;
+    width: 145px;
   }
 }
