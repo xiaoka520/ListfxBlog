@@ -77,7 +77,10 @@ html:not([data-theme='dark']) #post-info #post-meta a:hover { color: var(--listf
   border-radius: 14px;
   transform: translateX(-50%);
 }
-#article-container { text-align: justify; }
+#article-container {
+  font-family: 'LXGW WenKai', sans-serif;
+  text-align: justify;
+}
 #body-wrap #page .page-title { text-align: center !important; }
 #article-container .mermaid, #article-container .mermaid svg, .mermaid-wrap,
 #article-container .mermaid svg rect.mermaid-bg, #article-container .mermaid svg rect:first-child { background: transparent !important; fill: transparent !important; }
