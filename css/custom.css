@@ -51,7 +51,20 @@ html:not([data-theme='dark']) #post-info .post-title,
 html:not([data-theme='dark']) #post-info #post-meta,
 html:not([data-theme='dark']) #post-info #post-meta a,
 html:not([data-theme='dark']) #footer,
-html:not([data-theme='dark']) #footer a { color: var(--listfx-text) !important; text-shadow: none !important; }
+html:not([data-theme='dark']) #footer > *,
+html:not([data-theme='dark']) #footer div,
+html:not([data-theme='dark']) #footer p,
+html:not([data-theme='dark']) #footer span,
+html:not([data-theme='dark']) #footer a,
+html:not([data-theme='dark']) #footer .copyright *,
+html:not([data-theme='dark']) #footer .framework-info * {
+  color: var(--listfx-text) !important;
+  text-shadow: none !important;
+}
+
+html:not([data-theme='dark']) #footer a:hover {
+  color: var(--listfx-accent) !important;
+}
 html:not([data-theme='dark']) #nav .menus_item:hover > a,
 html:not([data-theme='dark']) #nav .menus_item:hover > a > span,
 html:not([data-theme='dark']) #nav .menus_item_child li:hover a,
@@ -144,7 +157,7 @@ iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='vimeo.com'] { 
 
 #page-header.full_page #site-title {
   font-family: 'DynaPuff', system-ui, sans-serif;
-  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
   font-weight: 600;
   letter-spacing: .02em;
 }
