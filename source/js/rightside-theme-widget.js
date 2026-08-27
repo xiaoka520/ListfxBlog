@@ -9,10 +9,6 @@
     card.setAttribute('role', 'group')
     card.setAttribute('aria-label', '外观设置')
 
-    const title = document.createElement('div')
-    title.className = 'theme-toggle-widget__title'
-    title.textContent = '深色模式'
-
     const toggle = document.createElement('theme-button')
     const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
     toggle.setAttribute('value', currentTheme)
@@ -31,7 +27,7 @@
     const toggleWrap = document.createElement('div')
     toggleWrap.className = 'theme-toggle-widget__control'
     toggleWrap.appendChild(toggle)
-    card.append(title, toggleWrap)
+    card.appendChild(toggleWrap)
     panel.appendChild(card)
   }
 
