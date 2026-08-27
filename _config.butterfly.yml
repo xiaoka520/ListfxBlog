@@ -400,11 +400,11 @@ rightside_scroll_percent: false
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
 # Don't repeat the same value
 rightside_item_order:
-  enable: false
-  # Default: readmode,translate,darkmode,hideAside
-  hide:
+  enable: true
+  # Keep the native dark-mode action as a hidden integration hook.
+  hide: darkmode
   # Default: toc,chat,comment
-  show:
+  show: toc,chat,comment
 
 # Animation for the bottom right config button
 rightside_config_animation: true
@@ -1068,7 +1068,8 @@ inject:
     - '<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">'
     - <link rel="stylesheet" href="/css/custom.css">
   bottom:
-    # - <script src="xxxx"></script>
+    - <script src="/js/theme-toggle-v4.js"></script>
+    - <script src="/js/rightside-theme-widget.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
