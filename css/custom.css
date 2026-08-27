@@ -141,6 +141,7 @@ iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='vimeo.com'] { 
 
 #page-header.full_page #site-title {
   font-family: 'DynaPuff', system-ui, sans-serif;
+  font-size: clamp(3.2rem, 7vw, 6.5rem);
   font-weight: 600;
   letter-spacing: .02em;
 }
@@ -249,4 +250,20 @@ iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='vimeo.com'] { 
     right: 43px;
     width: 145px;
   }
+}
+
+/* Playful navigation typography. */
+#nav .site-name,
+#nav .site-page,
+#nav .menus_item > a {
+  font-family: 'ZCOOL KuaiLe', sans-serif;
+}
+
+/* The white wave is only used in light mode. */
+html[data-theme='dark'] #page-header.full_page::after {
+  display: none;
+}
+
+html[data-theme='dark'] #page-header.full_page #scroll-down {
+  bottom: 22px;
 }
