@@ -207,6 +207,9 @@ iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='vimeo.com'] { 
   width: 145px;
   height: 75px;
   padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   border: 1px solid var(--listfx-border);
   border-radius: 14px;
@@ -225,15 +228,6 @@ iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='vimeo.com'] { 
   opacity: 1;
   pointer-events: auto;
   transform: translateX(0) scale(1);
-}
-
-.theme-toggle-widget__title {
-  margin-bottom: 3px;
-  color: var(--font-color);
-  text-align: center;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.4;
 }
 
 .theme-toggle-widget__control {
