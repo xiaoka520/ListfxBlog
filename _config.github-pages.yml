@@ -1,0 +1,4 @@
+# GitHub Pages project-site overrides.
+# Keep the canonical/custom-domain settings in _config.yml unchanged.
+url: https://xiaoka520.github.io/ListfxBlog
+root: /ListfxBlog/
