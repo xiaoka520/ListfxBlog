@@ -130,3 +130,38 @@ iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='vimeo.com'] { 
   #post-info #post-meta > .meta-secondline > span:not(.post-meta-wordcount),
   #post-info #post-meta .post-meta-separator { display: none !important; }
 }
+
+/* Full-screen homepage hero. */
+#page-header.full_page #site-info {
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+#page-header.full_page #site-title {
+  font-family: 'DynaPuff', system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+#page-header.full_page #scroll-down {
+  bottom: 78px;
+  z-index: 3;
+}
+
+#page-header.full_page::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  z-index: 2;
+  height: 72px;
+  pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 100' preserveAspectRatio='none'%3E%3Cpath fill='%23fff' d='M0 42C160 2 320 82 480 42S800 2 960 42V100H0Z'/%3E%3C/svg%3E") center bottom / 100% 100% no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  #page-header.full_page #scroll-down { bottom: 58px; }
+  #page-header.full_page::after { height: 52px; }
+}
