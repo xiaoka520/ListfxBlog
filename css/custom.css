@@ -189,3 +189,72 @@ iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='vimeo.com'] { 
 @media (prefers-reduced-motion: reduce) {
   #page-header.full_page::after { animation: none; }
 }
+
+/* V4 day/night widget in the right-side settings panel. */
+#rightside #rightside-config-hide {
+  overflow: visible;
+}
+
+#rightside #rightside-config-hide > #darkmode {
+  display: none !important;
+}
+
+#rightside .theme-toggle-widget {
+  position: absolute;
+  top: -34px;
+  right: 45px;
+  box-sizing: border-box;
+  width: 220px;
+  min-height: 112px;
+  padding: 14px 16px 16px;
+  overflow: hidden;
+  border: 1px solid var(--listfx-border);
+  border-radius: 14px;
+  background: var(--listfx-glass);
+  box-shadow: var(--listfx-shadow);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(14px) scale(.96);
+  transform-origin: right center;
+  backdrop-filter: blur(14px) saturate(135%);
+  -webkit-backdrop-filter: blur(14px) saturate(135%);
+  transition: opacity .28s ease, transform .32s ease;
+}
+
+#rightside #rightside-config-hide.show .theme-toggle-widget {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0) scale(1);
+}
+
+.theme-toggle-widget__title {
+  margin-bottom: 8px;
+  color: var(--font-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.theme-toggle-widget__control {
+  position: relative;
+  width: 180px;
+  height: 62px;
+  margin: 0 auto;
+}
+
+.theme-toggle-widget__control theme-button {
+  position: relative;
+  display: block;
+  width: 180px;
+  height: 62px;
+}
+
+@media screen and (max-width: 480px) {
+  #rightside .theme-toggle-widget {
+    right: 43px;
+    width: 202px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
